@@ -7,14 +7,14 @@ import requests
 
 load_dotenv()
 
-# Exemplo de URL da API com latitude e longitude
-URL = "https://api.openweathermap.org/data/2.5/weather?q=Brazil,br&APPID=afd2cfd846fb4d6e799cd967c2bb6190"
+# URL DA API PUXANDO DO .ENV
+URL = "API_KEY"
 
 params = {
     "lat": -10,
     "lon": -55,
-    "appid": os.getenv("API_KEY"),  # se for usar com chave, ou remova este campo
-    "units": "metric"  # ou "standard" para Kelvin
+    "appid": os.getenv("API_KEY"),  
+    "units": "metric" 
 }
 
 response = requests.get(URL, params=params)

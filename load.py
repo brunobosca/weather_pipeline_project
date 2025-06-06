@@ -22,7 +22,7 @@ s3 = boto3.client(
 agora = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
 # Caminho do arquivo local e nome no bucket
-local_path = f"data/processed/clima_tratado.csv"  # Substitua pelo caminho real
+local_path = f"data/processed/clima_tratado.csv"  
 s3_key = "weather_data.csv"            # Nome do arquivo no S3
 
 # Upload
