@@ -42,4 +42,62 @@ Criar uma estrutura simples, porém escalável, de **extração de dados via API
 git clone https://github.com/brunobosca/clima-pipeline-s3.git
 cd clima-pipeline-s3
 
+### 2. Instale os requisitos 
+
+pip install -r requirements.txt
+
+### 3. Configure as variáveis de ambiente
+
+Crie um arquivo .env com as seguintes chaves:
+
+AWS_ACCESS_KEY_ID=SUAS_CREDENCIAIS
+AWS_SECRET_ACCESS_KEY=SUAS_CREDENCIAIS
+AWS_REGION=us-east-2
+
+### 4. Execute a pipeline
+
+python pipeline.py
+
+
+## 📁 Estrutura do Projeto
+
+📦 clima-pipeline-s3
+├── .env                 # Variáveis sensíveis (NÃO subir pro GitHub)
+├── pipeline.py          # Pipeline principal
+├── s3_upload.py         # Módulo de upload para o S3
+├── listar_s3.py         # Lista arquivos no bucket
+├── dados_clima.csv      # Arquivo gerado
+├── README.md            # Este arquivo
+└── requirements.txt     # Dependências
+
+
+## 🚀 Potenciais Extensões
+
+Armazenamento contínuo com agendamento (cron/Lambda)
+
+Upload particionado por data (YYYY/MM/DD/arquivo.csv)
+
+Conexão com bancos como Redshift, Athena, BigQuery, etc.
+
+Visualização com Power BI ou Looker Studio (via S3 ou API)
+
+
+## 🔒 Segurança
+Este projeto segue boas práticas de segurança:
+
+Uso de .env para variáveis sensíveis
+
+Acesso controlado via usuário IAM com política mínima
+
+Nunca expõe chaves diretamente no código
+
+## 💼 Sobre Mim
+👋 Me chamo Bruno e este projeto é parte do meu portfólio voltado para engenharia de dados, cloud e automação de pipelines com Python.
+Estou em constante evolução e buscando oportunidades para aplicar essas habilidades em ambientes reais.
+
+## 📲 Contato
+LinkedIn: linkedin.com/in/brunoboscaini
+
+GitHub: github.com/brunobosca
+
 
