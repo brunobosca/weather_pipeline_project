@@ -39,7 +39,7 @@ Criar uma estrutura simples, porém escalável, de **extração de dados via API
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/brunosempai/clima-pipeline-s3.git
+git clone https://github.com/brunobosca/clima-pipeline-s3.git
 cd clima-pipeline-s3
 
 
